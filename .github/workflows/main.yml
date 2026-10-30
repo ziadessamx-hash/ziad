@@ -1,0 +1,13 @@
+name: print ziad
+on: 
+ push: 
+  branches: main
+jobs:
+  zoz:
+   runs-on: ubuntu-latest
+   steps:
+     - name: ziad essam
+       run: echo "hello world"
+     - name: fworkflow
+       run: echo "test" 
+ 
