@@ -2,6 +2,8 @@ name: print ziad
 on: 
  push: 
   branches: main
+ workflow_dispatch:
+    
 jobs:
   zoz:
    runs-on: ubuntu-latest
