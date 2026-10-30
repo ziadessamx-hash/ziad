@@ -1,0 +1,23 @@
+name: 3jops
+on: 
+ workflow_dispatch:
+
+
+jobs:
+  firstjops:
+   runs-on: ubuntu-latest
+   steps:
+     - run: echo "1jop"
+  sescondjop:
+   needs: firstjops
+   runs-on: ubuntu-latest
+   steps:
+     - run: echo "2jop"
+     
+  thirdjop:  
+   needs: sescondjop
+   runs-on: ubuntu-latest
+   steps:
+     - run: echo "3jop"
+   
+     
