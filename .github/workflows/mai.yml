@@ -1,0 +1,15 @@
+name: Jobs Practice
+
+on:
+  workflow_dispatch:
+
+jobs:
+  information:
+    runs-on: ubuntu-latest
+
+    steps:
+    - run: echo "Starting GitHub Actions"
+    - run: ls
+    - run: git --version
+
+     
